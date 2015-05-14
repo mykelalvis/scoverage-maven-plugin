@@ -36,30 +36,30 @@ under the License.
     <inceptionYear>2014</inceptionYear>
     <url>https://scoverage.github.io/scoverage-maven-plugin/${project.version}/</url>
 
-    <repositories>
-        <repository>
-            <id>sonatype-nexus-snapshots</id>
-            <name>Sonatype Nexus Snapshots</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
+  <distributionManagement>
+    <repository>
+      <id>central</id>
+      <name>Proxy Releases</name>
+      <url>http://ihealthtechnologies.artifactoryonline.com/ihealthtechnologies/libs-releases-local</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <name>Proxy Snapshots</name>
+      <url>http://ihealthtechnologies.artifactoryonline.com/ihealthtechnologies/libs-snapshots-local</url>
+    </snapshotRepository>
+  </distributionManagement>
+
 
     <scm>
-        <connection>scm:git:git://github.com/scoverage/scoverage-maven-plugin.git</connection>
-        <developerConnection>scm:git:git@github.com:scoverage/scoverage-maven-plugin.git</developerConnection>
-        <url>https://github.com/scoverage/scoverage-maven-plugin/tree/${project.scm.tag}</url>
+        <connection>scm:git:git@github.com:mykelalvis/scoverage-maven-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:mykelalvis/scoverage-maven-plugin.git</developerConnection>
+        <url>https://github.com/mykelalvis/scoverage-maven-plugin/tree/${project.scm.tag}</url>
         <tag>HEAD</tag>
     </scm>
 
     <issueManagement>
         <system>GitHub Issues</system>
-        <url>https://github.com/scoverage/scoverage-maven-plugin/issues</url>
+        <url>https://github.com/mykelalvis/scoverage-maven-plugin/issues</url>
     </issueManagement>
 
     <developers>
